@@ -26,7 +26,6 @@ cacheSolve <- function(x, ...) {
   if(!is.null(m)) {
     return(m)
   }
-  print("teste")
   data <- x$get()
   m <- solve(data)
   x$setinverse(m)
